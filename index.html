@@ -112,13 +112,12 @@
         <a class="font-['Inter'] tracking-tight text-sm uppercase font-semibold text-slate-400 hover:text-slate-100 transition-colors"
           href="#Experience">Experiencia</a>
         <a class="font-['Inter'] tracking-tight text-sm uppercase font-semibold text-slate-400 hover:text-slate-100 transition-colors"
+          href="#Formacion">Formación</a>
+        <a class="font-['Inter'] tracking-tight text-sm uppercase font-semibold text-slate-400 hover:text-slate-100 transition-colors"
           href="#Work">Proyectos</a>
         <a class="font-['Inter'] tracking-tight text-sm uppercase font-semibold text-slate-400 hover:text-slate-100 transition-colors"
           href="#Contact">Contacto</a>
-        <button
-          class="px-5 py-2 border border-outline-variant/20 rounded-lg text-primary-fixed-dim hover:bg-primary-fixed/10 transition-all duration-300 font-['Inter'] tracking-tight text-sm uppercase font-semibold">
-          Resume
-        </button>
+        
       </div>
     </div>
   </nav>
@@ -181,7 +180,7 @@
       </div>
     </section>
     <!-- About Section -->
-    <section class="py-32 px-8 max-w-7xl mx-auto bg-surface-container-low rounded-xl" id="Sobre Mí">
+    <section class="py-32 px-8 max-w-7xl mx-auto bg-surface-container-low rounded-xl" id="About">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div class="md:col-span-4">
           <h2 class="text-3xl font-black tracking-tighter text-primary-fixed-dim uppercase flex items-center gap-2">
@@ -208,7 +207,7 @@
       </div>
     </section>
     <!-- Experience Section -->
-    <section class="py-32 px-8 max-w-5xl mx-auto" id="Experiencia">
+    <section class="py-32 px-8 max-w-5xl mx-auto" id="Experience">
       <div class="mb-16">
         <h2 class="text-3xl font-black tracking-tighter text-primary-fixed-dim uppercase flex items-center gap-2">
           02. <span class="text-primary">Experiencia</span>
@@ -245,65 +244,172 @@
             Tecnologías: SQL Server, SQL, Java
           </p>
         </div>
+      </div>
+    </section>
 
-        <!-- Smarteat -->
-        <div
-          class="group relative pl-8 border-l border-outline-variant/20 hover:border-primary-fixed-dim transition-colors">
+    <!-- Formación Section -->
+    <section class="py-32 px-8 max-w-7xl mx-auto" id="Formacion">
+      <div class="mb-16">
+        <h2 class="text-3xl font-black tracking-tighter text-primary-fixed-dim uppercase flex items-center gap-2">
+          03. <span class="text-primary">Formación</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+        <!-- LEFT: Estudios (col-span-5) -->
+        <div class="lg:col-span-5 space-y-10">
+          <h3 class="text-[10px] uppercase tracking-[0.2em] text-primary-fixed-dim font-bold flex items-center gap-3">
+            <span class="w-6 h-[1px] bg-primary-fixed-dim/40"></span>Estudios
+          </h3>
+
+          <!-- SMR -->
           <div
-            class="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-outline-variant group-hover:bg-primary-fixed-dim transition-colors">
+            class="group relative pl-6 border-l border-outline-variant/20 hover:border-primary-fixed-dim transition-colors duration-300">
+            <div
+              class="absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full bg-outline-variant group-hover:bg-primary-fixed-dim transition-colors shadow-[0_0_0px_rgba(56,222,187,0)] group-hover:shadow-[0_0_10px_rgba(56,222,187,0.5)]">
+            </div>
+            <div class="flex justify-between items-start mb-1">
+              <h4 class="text-base font-bold text-primary leading-tight">Técnico en Sistemas Microinformáticos y Redes
+                <span class="text-primary-fixed-dim">(SMR)</span></h4>
+            </div>
+            <p class="text-xs uppercase tracking-widest text-on-surface-variant/50 font-semibold mb-2">Centro María
+              Inmaculada · 2019–2021</p>
+            <p class="text-sm text-on-surface-variant/70 leading-relaxed">Formación en redes, sistemas operativos y
+              mantenimiento de equipos informáticos.</p>
           </div>
 
-          <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-            <h3 class="text-xl font-bold text-primary">
-              Desarrollador Android
-              <span class="text-primary-fixed-dim">| Smarteat (TFC)</span>
+          <!-- DAM -->
+          <div
+            class="group relative pl-6 border-l border-outline-variant/20 hover:border-primary-fixed-dim transition-colors duration-300">
+            <div
+              class="absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full bg-outline-variant group-hover:bg-primary-fixed-dim transition-colors shadow-[0_0_0px_rgba(56,222,187,0)] group-hover:shadow-[0_0_10px_rgba(56,222,187,0.5)]">
+            </div>
+            <div class="flex justify-between items-start mb-1">
+              <h4 class="text-base font-bold text-primary leading-tight">Desarrollo de Aplicaciones Multiplataforma
+                <span class="text-primary-fixed-dim">(DAM)</span></h4>
+            </div>
+            <p class="text-xs uppercase tracking-widest text-on-surface-variant/50 font-semibold mb-2">IES Juan de la
+              Cierva · 2022–2024</p>
+            <p class="text-sm text-on-surface-variant/70 leading-relaxed">Especialización en programación (Java), diseño
+              de interfaces y bases de datos. TFC: <span class="text-primary-fixed-dim/80 italic">SmartEat</span>, app
+              Android con backend en Spring Boot.</p>
+          </div>
+          <!-- Idiomas -->
+          <div>
+            <h3
+              class="text-[10px] uppercase tracking-[0.2em] text-primary-fixed-dim font-bold flex items-center gap-3 mb-8">
+              <span class="w-6 h-[1px] bg-primary-fixed-dim/40"></span>Idiomas
             </h3>
-            <span class="text-xs uppercase tracking-widest text-on-surface-variant/60 font-semibold py-1">
-              2024-2025
-            </span>
+            <div class="space-y-5">
+
+              <!-- Español -->
+              <div>
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-sm font-semibold text-primary">Español</span>
+                  <span class="text-[10px] uppercase tracking-widest text-primary-fixed-dim font-bold">Nativo</span>
+                </div>
+                <div class="h-[2px] w-full bg-outline-variant/20 rounded-full overflow-hidden">
+                  <div class="h-full bg-primary-fixed-dim rounded-full" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <!-- Inglés -->
+              <div>
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-sm font-semibold text-primary">Inglés</span>
+                  <div class="flex items-center gap-3">
+                    <span class="text-[10px] uppercase tracking-widest text-on-surface-variant/50 font-bold">B1
+                      Cambridge · preparando C1</span>
+                  </div>
+                </div>
+                <div class="h-[2px] w-full bg-outline-variant/20 rounded-full overflow-hidden">
+                  <div class="h-full rounded-full"
+                    style="width: 62%; background: linear-gradient(90deg, #38debb, #38debb99);"></div>
+                </div>
+                <div class="flex justify-between mt-1.5">
+                  <span class="text-[9px] text-on-surface-variant/30 uppercase tracking-widest">Conversación:
+                    Medio</span>
+                  <span class="text-[9px] text-on-surface-variant/30 uppercase tracking-widest">Escritura: Alto</span>
+                  <span class="text-[9px] text-on-surface-variant/30 uppercase tracking-widest">Comprensión:
+                    Medio</span>
+                </div>
+              </div>
+
+            </div>
           </div>
-
-          <p class="text-on-surface-variant max-w-2xl">
-            Desarrollo de aplicación móvil Android orientada a la gestión de hábitos nutricionales.
-            Implementación de la lógica de la aplicación y consumo de una API REST propia desarrollada en Spring para la
-            gestión de datos.
-            Integración frontend-backend para el manejo dinámico de información.
-          </p>
-
-          <p class="text-on-surface-variant/70 max-w-2xl text-sm mt-2">
-            Tecnologías: Java, Android Studio, Spring Boot, API REST
-          </p>
         </div>
 
-        <!-- Las 3 Negrillas -->
-        <div
-          class="group relative pl-8 border-l border-outline-variant/20 hover:border-primary-fixed-dim transition-colors">
-          <div
-            class="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-outline-variant group-hover:bg-primary-fixed-dim transition-colors">
-          </div>
+        <!-- RIGHT: Conocimientos + Idiomas (col-span-7) -->
+        <div class="lg:col-span-7 space-y-12">
 
-          <div class="flex flex-col md:flex-row md:justify-between items-start mb-2">
-            <h3 class="text-xl font-bold text-primary">
-              Desarrollador Web
-              <span class="text-primary-fixed-dim">| Proyecto Las 3 Negrillas</span>
+          <!-- Conocimientos técnicos -->
+          <div>
+            <h3
+              class="text-[10px] uppercase tracking-[0.2em] text-primary-fixed-dim font-bold flex items-center gap-3 mb-8">
+              <span class="w-6 h-[1px] bg-primary-fixed-dim/40"></span>Conocimientos
             </h3>
-            <span class="text-xs uppercase tracking-widest text-on-surface-variant/60 font-semibold py-1">
-              2026
-            </span>
+            <div class="space-y-5">
+
+              <!-- Backend -->
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-on-surface-variant/50 font-bold mb-3">Backend</p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">Java</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">Spring
+                    Boot</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">API
+                    REST</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">PHP</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">C</span>
+                </div>
+              </div>
+
+              <!-- Bases de datos -->
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-on-surface-variant/50 font-bold mb-3">Bases de
+                  datos</p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">MySQL</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">SQL
+                    Server</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">PL/SQL</span>
+                </div>
+              </div>
+
+              <!-- Frontend & Mobile -->
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-on-surface-variant/50 font-bold mb-3">Frontend &
+                  Mobile</p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">HTML</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">CSS</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">Android
+                    Studio</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">JavaScript</span>
+                  <span
+                    class="px-3 py-1.5 bg-surface-container-highest border border-outline-variant/10 rounded text-[11px] font-bold text-primary-fixed-dim uppercase tracking-tight">XML</span>
+                </div>
+              </div>
+
+            </div>
           </div>
 
-          <p class="text-on-surface-variant max-w-2xl">
-            Desarrollo de página web para casa rural, enfocada en la presentación del alojamiento y la mejora de la
-            experiencia de usuario.
-            Implementación de diseño responsive y estructura visual moderna utilizando HTML, CSS y JavaScript.
-            Creación de secciones informativas, galería de imágenes y navegación optimizada para distintos dispositivos.
-          </p>
+          
 
-          <p class="text-on-surface-variant/70 max-w-2xl text-sm mt-2">
-            Tecnologías: HTML, CSS, JavaScript
-          </p>
         </div>
-
       </div>
     </section>
 
@@ -466,7 +572,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-48 px-8 max-w-3xl mx-auto text-center" id="Contacto">
+    <section class="py-48 px-8 max-w-3xl mx-auto text-center" id="Contact">
       <div class="space-y-8">
         <div
           class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/10">
