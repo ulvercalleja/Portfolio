@@ -115,3 +115,22 @@ btn.addEventListener("click", async () => {
   // Estado inicial al cargar
   setActive(getActiveSection());
 })();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const heroBtn = document.getElementById('heroWorkBtn');
+  if (!heroBtn) return;
+
+  heroBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const target = document.getElementById('Work');
+    if (!target) return;
+
+    const NAV_HEIGHT = 80;
+
+    window.scrollTo({
+      top: target.offsetTop - NAV_HEIGHT,
+      behavior: 'auto' // sin animación
+    });
+  });
+});
