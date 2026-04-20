@@ -594,68 +594,57 @@
         </p>
         <!-- Descargar CV -->
         <div class="pt-4">
-          <a href="fotos/UCV-CV.pdf" target="_blank" class="text-sm font-bold uppercase tracking-widest text-primary-fixed-dim
-           transition-all duration-300
-           hover:text-white
-           hover:drop-shadow-[0_0_6px_#38debb]
-           drop-shadow-[0_0_2px_#38debb]">
+          <a href="fotos/UCV-CV.pdf" download="CV-Ulver.pdf" class="text-sm font-bold uppercase tracking-widest text-primary-fixed-dim
+     transition-all duration-300
+     hover:text-white
+     hover:drop-shadow-[0_0_6px_#38debb]
+     drop-shadow-[0_0_2px_#38debb]">
 
             Descargar CV
 
           </a>
         </div>
         <div class="flex justify-center pt-8">
-          <div class="flex border-2 border-primary-fixed-dim rounded-lg overflow-hidden">
 
-            <!-- Enviar email (principal) -->
-            <a href="mailto:jculvercalleja@gmail.com"
-              class="px-6 py-4 text-white font-bold uppercase text-sm hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all">
-              Enviar email
+          <!-- Redes sociales -->
+          <div class="flex justify-center gap-6 pt-6">
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/ulver-calleja-valtuille/" target="_blank" rel="noopener noreferrer"
+              class="group">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                class="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-300 fill-white">
+
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.44-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.64 0 4.31 2.4 4.31 5.51v6.23zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.97 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0z" />
+
+              </svg>
             </a>
 
-            <!-- Copiar email (icono) -->
-            <button id="copyEmailBtn"
-              class="px-4 flex items-center justify-center border-l border-primary-fixed-dim hover:bg-primary-fixed-dim transition-all">
+            <!-- GitHub -->
+            <a href="https://github.com/ulvercalleja" target="_blank" rel="noopener noreferrer" class="group">
 
-              <img src="/fotos/logos/logo_copiar.png" alt="Copiar email"
-                class="w-5 h-5 filter invert brightness-200 opacity-80 hover:opacity-100 transition-all" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                class="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-300 fill-white">
 
+                <path
+                  d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.52-1.32-1.28-1.67-1.28-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.73-1.52-2.55-.29-5.23-1.27-5.23-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 015.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.4-2.69 5.36-5.25 5.64.41.35.77 1.04.77 2.1v3.12c0 .31.21.66.79.55A11.51 11.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+
+              </svg>
+            </a>
+
+            <!-- Email -->
+            <button id="openEmailLightbox" class="group opacity-70 hover:opacity-100 transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-12 h-12 fill-white">
+                <path
+                  d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
             </button>
 
           </div>
-        </div>
-
-        <!-- Redes sociales -->
-        <div class="flex justify-center gap-6 pt-6">
-
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/ulver-calleja-valtuille/" target="_blank" rel="noopener noreferrer"
-            class="group">
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              class="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-300 fill-white">
-
-              <path
-                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.44-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.64 0 4.31 2.4 4.31 5.51v6.23zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.97 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0z" />
-
-            </svg>
-          </a>
-
-          <!-- GitHub -->
-          <a href="https://github.com/ulvercalleja" target="_blank" rel="noopener noreferrer" class="group">
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              class="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-300 fill-white">
-
-              <path
-                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.52-1.32-1.28-1.67-1.28-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.73-1.52-2.55-.29-5.23-1.27-5.23-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 015.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.4-2.69 5.36-5.25 5.64.41.35.77 1.04.77 2.1v3.12c0 .31.21.66.79.55A11.51 11.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
-
-            </svg>
-          </a>
 
         </div>
-
-      </div>
     </section>
   </main>
 
@@ -696,6 +685,82 @@
 
     </div>
   </footer>
+
+  <!-- ============================================================
+     EMAIL LIGHTBOX
+     ============================================================ -->
+  <div id="email-lightbox" aria-modal="true" role="dialog" aria-label="Contactar por email"
+    style="display:none; position:fixed; inset:0; z-index:9998; align-items:center; justify-content:center;">
+
+    <!-- Backdrop -->
+    <div id="email-lightbox-backdrop"
+      style="position:absolute; inset:0; background:rgba(4,19,41,0.85); backdrop-filter:blur(6px); cursor:pointer;">
+    </div>
+
+    <!-- Card -->
+    <div id="email-lightbox-card"
+      style="position:relative; z-index:1; width:min(90vw,420px); background:#112036; border:1px solid rgba(56,222,187,0.15); border-radius:1rem; padding:2.5rem; box-shadow:0 32px 80px rgba(0,0,0,0.6); animation: lb-scale-in 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards;">
+
+      <!-- Close -->
+      <button id="email-lightbox-close"
+        style="position:absolute; top:1rem; right:1rem; background:none; border:1px solid rgba(255,255,255,0.15); border-radius:50%; width:32px; height:32px; color:rgba(255,255,255,0.6); cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background 0.2s;"
+        onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='none'">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round">
+          <line x1="1" y1="1" x2="13" y2="13" />
+          <line x1="13" y1="1" x2="1" y2="13" />
+        </svg>
+      </button>
+
+      <!-- Icon -->
+      <div style="display:flex; justify-content:center; margin-bottom:1.5rem;">
+        <div
+          style="width:56px; height:56px; background:rgba(56,222,187,0.08); border:1px solid rgba(56,222,187,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#38debb" width="26" height="26">
+            <path
+              d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <h3
+        style="text-align:center; font-weight:800; font-size:1.25rem; color:#fff; margin:0 0 0.5rem; letter-spacing:-0.02em;">
+        Contactar</h3>
+      <p
+        style="text-align:center; font-size:0.85rem; color:rgba(214,227,255,0.5); margin:0 0 2rem; font-family:'Inter',sans-serif;">
+        jculvercalleja@gmail.com</p>
+
+      <!-- Buttons -->
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+
+        <!-- Enviar email -->
+        <a href="mailto:jculvercalleja@gmail.com"
+          style="display:flex; align-items:center; justify-content:center; gap:0.6rem; padding:0.9rem 1.5rem; background:rgba(56,222,187,0.1); border:1px solid rgba(56,222,187,0.3); border-radius:0.5rem; color:#38debb; font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; text-decoration:none; transition:background 0.2s, border-color 0.2s; font-family:'Inter',sans-serif;"
+          onmouseover="this.style.background='rgba(56,222,187,0.18)'; this.style.borderColor='rgba(56,222,187,0.6)'"
+          onmouseout="this.style.background='rgba(56,222,187,0.1)'; this.style.borderColor='rgba(56,222,187,0.3)'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+            <path
+              d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          Abrir cliente de correo
+        </a>
+
+        <!-- Copiar email -->
+        <button id="copyEmailLightboxBtn"
+          style="display:flex; align-items:center; justify-content:center; gap:0.6rem; padding:0.9rem 1.5rem; background:transparent; border:1px solid rgba(214,227,255,0.12); border-radius:0.5rem; color:rgba(214,227,255,0.6); font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; cursor:pointer; transition:background 0.2s, color 0.2s, border-color 0.2s; font-family:'Inter',sans-serif;"
+          onmouseover="this.style.background='rgba(214,227,255,0.06)'; this.style.color='rgba(214,227,255,0.9)'; this.style.borderColor='rgba(214,227,255,0.25)'"
+          onmouseout="this.style.background='transparent'; this.style.color='rgba(214,227,255,0.6)'; this.style.borderColor='rgba(214,227,255,0.12)'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+            <path
+              d="M16 1H4C2.9 1 2 1.9 2 3v14h2V3h12V1zm3 4H8C6.9 5 6 5.9 6 7v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg>
+          <span id="copyEmailLightboxLabel">Copiar dirección</span>
+        </button>
+
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="main.js"></script>
 
