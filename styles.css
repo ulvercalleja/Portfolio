@@ -3,6 +3,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ── Mobile menu animation ── */
+#mobileMenu.is-open {
+  animation: menu-slide-down 0.28s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+#mobileMenu.is-closing {
+  animation: menu-slide-up 0.22s ease-in forwards;
+}
+
+@keyframes menu-slide-down {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes menu-slide-up {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-8px); }
+}
+
+/* Link hover teal glow */
+#mobileMenu a.mobile-nav-link:hover {
+  color: #38debb !important;
+}
+
 /* ── Hover de la foto y lightbox ── */
 .photo-card {
   position: relative;
@@ -158,11 +180,27 @@ body.lightbox-open {
 @media (max-width: 767px) {
   #lightbox-close {
     top: -2.5rem;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
   }
 
   #lightbox-img {
     max-height: 60vh;
+  }
+
+  /* Larger touch targets for mobile */
+  .photo-card {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Always show overlay hint on mobile (no hover) */
+  .photo-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);
+  }
+
+  /* Prevent double-tap zoom on buttons */
+  button, a {
+    touch-action: manipulation;
   }
 }

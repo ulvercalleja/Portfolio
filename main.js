@@ -1,3 +1,41 @@
+// ── Mobile hamburger menu (fullscreen overlay) ────────────
+(function () {
+  const btn      = document.getElementById('mobileMenuBtn');
+  const closeBtn = document.getElementById('mobileMenuClose');
+  const menu     = document.getElementById('mobileMenu');
+  if (!btn || !menu) return;
+
+  function openMenu() {
+    menu.style.display = 'flex';
+    menu.classList.remove('is-closing');
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeMenu() {
+    menu.classList.remove('is-open');
+    menu.classList.add('is-closing');
+    menu.setAttribute('aria-hidden', 'true');
+    setTimeout(() => {
+      menu.style.display = 'none';
+      menu.classList.remove('is-closing');
+    }, 220);
+  }
+
+  btn.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menu.querySelectorAll('a.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.style.display === 'flex') closeMenu();
+  });
+})();
+
 // ── Lightbox (fotos) ──────────────────────────────────────
 (function () {
   const lightbox   = document.getElementById('lightbox');
@@ -90,17 +128,24 @@
 
 // ── Active nav + fast smooth scroll ───────────────────────
 (function () {
-  const NAV_LINKS   = document.querySelectorAll('nav a[href^="#"]');
-  const ACTIVE      = ['text-teal-400', 'border-b-2', 'border-teal-400', 'pb-1'];
-  const INACTIVE    = ['text-slate-400', 'hover:text-slate-100', 'transition-colors'];
-  const SECTION_IDS = ['About', 'Experience', 'Formacion', 'Work', 'Contact'];
-  const NAV_HEIGHT  = 80;
+  const DESKTOP_LINKS = document.querySelectorAll('nav a[href^="#"]');
+  const MOBILE_LINKS  = document.querySelectorAll('#mobileMenu a.mobile-nav-link');
+  const ACTIVE        = ['text-teal-400', 'border-b-2', 'border-teal-400', 'pb-1'];
+  const INACTIVE      = ['text-slate-400', 'hover:text-slate-100', 'transition-colors'];
+  const SECTION_IDS   = ['About', 'Experience', 'Formacion', 'Work', 'Contact'];
+  const NAV_HEIGHT    = 80;
 
   function setActive(id) {
-    NAV_LINKS.forEach(link => {
+    // Desktop links: Tailwind classes
+    DESKTOP_LINKS.forEach(link => {
       const isMatch = link.getAttribute('href') === '#' + id;
       link.classList.remove(...ACTIVE, ...INACTIVE);
       link.classList.add(...(isMatch ? ACTIVE : INACTIVE));
+    });
+    // Mobile links: inline color (last one "Contacto" keeps teal only when active)
+    MOBILE_LINKS.forEach(link => {
+      const isMatch = link.getAttribute('href') === '#' + id;
+      link.style.color = isMatch ? '#38debb' : 'rgba(214,227,255,0.75)';
     });
   }
 
@@ -143,7 +188,20 @@
     requestAnimationFrame(step);
   }
 
-  NAV_LINKS.forEach(link => {
+  // Desktop links click
+  DESKTOP_LINKS.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id     = link.getAttribute('href').replace('#', '');
+      const target = document.getElementById(id);
+      if (!target) return;
+      setActive(id);
+      smoothScrollTo(target.offsetTop - NAV_HEIGHT, 400);
+    });
+  });
+
+  // Mobile links click (smooth scroll + close menu handled in hamburger IIFE)
+  MOBILE_LINKS.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const id     = link.getAttribute('href').replace('#', '');
